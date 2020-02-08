@@ -104,3 +104,11 @@ Depending on the configuration, it may be necessary to use `--net=host` (to acce
 ```sh
 docker run --name ruuvi-collector --privileged --net=host -d ruuvi-collector
 ```
+
+### docker-compose
+
+Create ruuvi-collector.properties and ruuvi-names.properties to the project directory and start the container using command:
+
+```sh
+docker-compose up --build -d
+```

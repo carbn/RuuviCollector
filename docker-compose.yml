@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  ruuvicollector:
+    build: .
+    volumes:
+      - './ruuvi-collector.properties:/app/ruuvi-collector.properties:ro'
+      - './ruuvi-names.properties:/app/ruuvi-names.properties:ro'
+    network_mode: host
+    # privileged: true
+    restart: unless-stopped
